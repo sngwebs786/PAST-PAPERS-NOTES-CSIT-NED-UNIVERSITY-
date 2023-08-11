@@ -1,0 +1,9 @@
+=> System on hoga. 
+=> POST(Power On Self Test)perform hoga. 
+=> Jb test perform hrha hga At that time hmare pas ek piece of code run hoga. 
+=> Ye POC hmare ROM(EEPROM) me store hta hai. 
+=> Is piece of code ko hm BIOS bh khte hen.
+=> Ye POC hmare pas initially run hga (Sb se phle ye code run hta h).
+=> Or ye jo code initially run hrha h ise hm khte hen Bootstrapping or Bootstrap Program.
+=> Ye POC kernel ko le k hmare computer k andr jo memory pdi hti h us m ja k load krdeta h.
+=> Or is bootstrap ko hm Firmware bh khte hen.
