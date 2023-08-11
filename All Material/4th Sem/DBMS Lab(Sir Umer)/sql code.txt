@@ -1,0 +1,124 @@
+CREATE TABLE Admin
+(
+  ad_id INT NOT NULL,
+  ad_name INT NOT NULL,
+  ad_password INT NOT NULL,
+  PRIMARY KEY (ad_id)
+);
+
+CREATE TABLE Subjects
+(
+  subj_id INT NOT NULL,
+  subj_name INT NOT NULL,
+  subj_unit INT NOT NULL,
+  subj_code INT NOT NULL,
+  ad_id INT NOT NULL,
+  PRIMARY KEY (subj_id),
+  FOREIGN KEY (ad_id) REFERENCES Admin(ad_id)
+);
+
+CREATE TABLE Student
+(
+  std_id INT NOT NULL,
+  std_name INT NOT NULL,
+  std_pwd INT NOT NULL,
+  std_father_name INT NOT NULL,
+  std_dob INT NOT NULL,
+  std_nationality INT NOT NULL,
+  std_city INT NOT NULL,
+  std_country INT NOT NULL,
+  std_phone INT NOT NULL,
+  std_email INT NOT NULL,
+  ad_id INT NOT NULL,
+  PRIMARY KEY (std_id),
+  FOREIGN KEY (ad_id) REFERENCES Admin(ad_id)
+);
+
+CREATE TABLE Teacher
+(
+  teach_id INT NOT NULL,
+  teach_name INT NOT NULL,
+  teach_pwd INT NOT NULL,
+  ad_id INT NOT NULL,
+  PRIMARY KEY (teach_id),
+  FOREIGN KEY (ad_id) REFERENCES Admin(ad_id)
+);
+
+CREATE TABLE Class
+(
+  class_id INT NOT NULL,
+  class_no INT NOT NULL,
+  section INT NOT NULL,
+  total_Stds INT NOT NULL,
+  ad_id INT NOT NULL,
+  PRIMARY KEY (class_id),
+  FOREIGN KEY (ad_id) REFERENCES Admin(ad_id)
+);
+
+CREATE TABLE Results
+(
+  total_marks INT NOT NULL,
+  obt_marks INT NOT NULL,
+  percentage INT NOT NULL,
+  grade INT NOT NULL,
+  res_id INT NOT NULL,
+  teach_id INT NOT NULL,
+  PRIMARY KEY (res_id),
+  FOREIGN KEY (teach_id) REFERENCES Teacher(teach_id)
+);
+
+CREATE TABLE Attendance
+(
+  classes_present INT NOT NULL,
+  classes_abs INT NOT NULL,
+  total INT NOT NULL,
+  atten_id INT NOT NULL,
+  teach_id INT NOT NULL,
+  PRIMARY KEY (atten_id),
+  FOREIGN KEY (teach_id) REFERENCES Teacher(teach_id)
+);
+
+CREATE TABLE Tests
+(
+  test_id INT NOT NULL,
+  attempted_ques INT NOT NULL,
+  total_marks INT NOT NULL,
+  obt_marks INT NOT NULL,
+  std_id INT NOT NULL,
+  teach_id INT NOT NULL,
+  PRIMARY KEY (test_id),
+  FOREIGN KEY (std_id) REFERENCES Student(std_id),
+  FOREIGN KEY (teach_id) REFERENCES Teacher(teach_id)
+);
+
+CREATE TABLE Fee
+(
+  fee_id INT NOT NULL,
+  fee_receipt INT NOT NULL,
+  amount INT NOT NULL,
+  std_id INT NOT NULL,
+  PRIMARY KEY (fee_id),
+  FOREIGN KEY (std_id) REFERENCES Student(std_id)
+);
+
+CREATE TABLE Notice
+(
+  issue_date INT NOT NULL,
+  notice_id INT NOT NULL,
+  notice_subj INT NOT NULL,
+  ad_id INT NOT NULL,
+  PRIMARY KEY (notice_id),
+  FOREIGN KEY (ad_id) REFERENCES Admin(ad_id)
+);
+
+CREATE TABLE Admission_Form
+(
+  form_id INT NOT NULL,
+  name INT NOT NULL,
+  cnic_num INT NOT NULL,
+  religion INT NOT NULL,
+  gender INT NOT NULL,
+  std_id INT NOT NULL,
+  PRIMARY KEY (form_id),
+  FOREIGN KEY (std_id) REFERENCES Student(std_id)
+);
