@@ -1,0 +1,60 @@
+-cybersecurity plan bnta hai policies se
+-assets in terms of cyber security is anything that has IP address by any means
+-contingency plans:
+	Backup plan in condition of unexpected events or disruptions.
+
+	Incident response plan:
+		What plan should be implemented in response of an incident is IRP. FIRST WE IDENTIFY, THEN WE CLASSIFIED(ATTACK HAI KIA AUR KIA KRSKTA) THEN WE PERFORM ACTION(IN RESPONSE OF ATTACK)
+
+	Disaster recovery plan:
+		We should not only cover logical but physical attacks also. This plan is executed in response of natural disaster. We must have backup. e.g. in case of fire, we should evacuate ourselves instead of our server. But we 		should have backup as both are necessary life and server. Others attack are shark attack underwater on internet cable in pakistan. backup is essential here, when and how frequently we should backup our data. 
+		
+	Business conitinuity plans:
+		Business continuity plans (BCP) involve strategies and procedures an organization puts in place to ensure essential functions can continue during and after a disaster or disruption. Here are definitions of the terms 		related to different types of recovery sites commonly included in BCP:
+
+		Hot Site:
+
+			A hot site is a fully equipped facility that is ready to be operational immediately after a disaster. It typically contains all the necessary hardware, software, telecommunications equipment, and other resources 			required to resume operations quickly.
+			Hot sites are expensive to maintain and operate because they need to be constantly updated and synchronized with the primary site. They are suitable for organizations that require minimal downtime and cannot 				afford to lose data or functionality.
+
+		Warm Site:
+
+			A warm site is a facility that has some of the necessary equipment and infrastructure to resume operations, but it is not fully equipped like a hot site.
+			It may have computer systems, telecommunications equipment, and connectivity, but they may not be fully configured or synchronized with the primary site. It requires some setup and configuration before it can 				become operational.
+			Warm sites are less expensive than hot sites and are suitable for organizations that can tolerate a slightly longer downtime but still need faster recovery than a cold site.
+
+		Cold Site:
+		A cold site is a facility that provides only rudimentary infrastructure, such as office space and basic utilities like power and HVAC (heating, ventilation, and air conditioning).
+		It does not have the necessary IT equipment or connectivity to resume operations immediately. Organizations must install and configure their own systems and infrastructure.
+		Cold sites are the least expensive option but require the longest recovery time. They are suitable for organizations that can tolerate extended downtime and have lower recovery time objectives (RTOs).
+	
+	In case of disaster, 3no plan ko refer kia jata hai to continue business withount any affect.
+
+		1- Risk assessment:
+		2- cybersecurity measures:
+			- fireballs:
+			- antiviruses
+			- intrusion system
+			- system regular backup or update
+			- employess cyber awareness and training
+			- backup startegies(full, half, interval, physical or ...)
+			- backup testing
+		3- Physical measures:
+			- electricity backup
+			- fire extinguisher
+			- incident reporting such as SOC
+			- containment strategies attack should not evolve 
+			- recovery strategies
+
+
+	Prevention of Electronic Crimes Act (PECA):
+		Laws and rules to avoid cyber crime. crime under PECA:
+			- Unauthorized access to info systems
+			- Data theft
+			- cyber terrorism
+			- Electronic fraud(benazir income support)
+			- cyber stalking(insta, fb etc)
+			- online harassment
+			- distribution of offensive material
+			
+		

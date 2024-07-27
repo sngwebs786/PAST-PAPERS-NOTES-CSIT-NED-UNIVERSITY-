@@ -1,0 +1,9 @@
+Key.print_screen
+Key.print_screen
+Key.enter
+Key.backspace
+Key.ctrl_l
+
+Key.ctrl_l
+
+Key.print_screen
